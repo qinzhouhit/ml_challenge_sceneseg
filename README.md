@@ -10,7 +10,6 @@ Implement movie scene segmentation based on paper "A Local-to-Global Approach to
 ### Solutions
 
 1. Self-made solution [SceneSeg]((https://github.com/movienet/movienet-tools)).
-
 2. Modification based on "A Local-to-Global Approach to Multi-modal Movie Scene Segmentation".
 
 
