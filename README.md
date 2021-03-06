@@ -12,7 +12,8 @@ It is a self-made solution. I use two-layer FC model as an example to show the w
 With more time and computation resources, one can improve the model from several aspects:
 1. Adjust the number of layers and hidden units in each layer.
 2. Adjust other hyperparameters such as learning rate, epochs, activation function, etc.
-3. Implement related models as indicated in the CVPR2020 papers.
+3. Considering more factors in the modeling, e.g., temporal dependency between different shots, etc.
+4. Implement related models as indicated in the CVPR2020 papers.
 
 
 
