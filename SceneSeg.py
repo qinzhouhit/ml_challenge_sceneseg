@@ -237,13 +237,12 @@ def main():
 	data_array = data_preprocess()
 	# data_array = pickle.load(open("data_dict.p", "rb"))
 	train_loader, test_loader = train_test_prepare(data_array, batch_size)
-
 	# model train
 	train(train_loader, test_loader, input_size, hidden_size, epochs, batch_size, lr, data_array)
 
 
 def evaluate():
-	# evaluate from trained results
+	# evaluate from the saved trained results
 	data_array = pickle.load(open("data_dict.p", "rb"))
 	pred_dict_tmp = pickle.load(open("pred_dict_raw.p", "rb"))
 	pr_dict, gt_dict, shot_to_end_frame_dict = {}, {}, {}
