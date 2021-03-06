@@ -50,6 +50,7 @@ def data_peek():
 
 
 def data_preprocess():
+	# preprocess data for further modeling data preparation
 	data_path = "./data"
 	files = []
 	for f in os.listdir(data_path):
@@ -84,6 +85,7 @@ def data_preprocess():
 
 
 class SceneSegDataset(Dataset):
+	# dedicated dataset for dataloader
 	def __init__(self, features, shot_idx, scene_gt, imdbids):
 		self.features = features
 		self.shot_idx = shot_idx
@@ -103,7 +105,7 @@ class SceneSegDataset(Dataset):
 
 
 def train_test_prepare(data_array, batch_size):
-	# setting data splits
+	# setting data splits and create dataloader for training and test
 	imdbids = list(data_array.keys())
 	np.random.shuffle(imdbids)
 	num_train = int(len(imdbids) * 0.8) # movies for train
@@ -172,6 +174,7 @@ def train(train_loader, test_loader, input_size, hidden_size, epochs, batch_size
 	criterion = nn.BCELoss(reduction='none')
 	optimizer = torch.optim.Adam(model.parameters(), lr=lr)
 
+	# train
 	model.train()
 	step = 0
 	for epoch in range(epochs):
