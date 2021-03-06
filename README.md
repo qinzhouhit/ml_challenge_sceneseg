@@ -1,5 +1,5 @@
 # Scene segmentation task
-Related paper: A Local-to-Global Approach to Multi-modal Movie Scene Segmentation. 
+Related paper: CVPR2020: A Local-to-Global Approach to Multi-modal Movie Scene Segmentation. 
 
 ### Requirements
 - Python 3.6+
@@ -13,7 +13,7 @@ With more time and computation resources, one can improve the model from several
 1. Adjust the number of layers and hidden units in each layer.
 2. Adjust other hyperparameters such as learning rate, epochs, activation function, etc.
 3. Considering more factors in the modeling, e.g., temporal dependency between different shots, etc.
-4. Implement related models as indicated in the CVPR2020 papers.
+4. Implement related models as indicated in the CVPR2020 paper.
 
 
 
