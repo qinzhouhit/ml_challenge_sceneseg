@@ -8,6 +8,7 @@ Related paper: CVPR2020: A Local-to-Global Approach to Multi-modal Movie Scene S
 ### Explanation
 
 A naive approach is implemented in SceneSeg.py:
+
 Model: I use two-layer FC model as an example to show the whole pipeline. 
 Training and Test: 80% and 20%.
 
