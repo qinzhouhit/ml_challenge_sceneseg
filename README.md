@@ -2,8 +2,8 @@
 Related paper: CVPR2020: A Local-to-Global Approach to Multi-modal Movie Scene Segmentation. 
 
 ### Requirements
-- Python 3.6+
-- PyTorch 1.0 or higher
+- Python 3.6
+- PyTorch 1.8
 
 ### Explanation
 
